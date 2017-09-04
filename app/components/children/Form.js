@@ -31,20 +31,19 @@ var Form = React.createClass({
     return (
       <div className="panel panel-default">
         <div className="panel-heading">
-          <h3 className="panel-title text-center">Query</h3>
+          <h3 className="panel-title text-center">Search</h3>
         </div>
         <div className="panel-body text-center">
           <form onSubmit={this.handleSubmit}>
             <div className="form-group">
-              <h4 className="">
-                <strong>Location</strong>
-              </h4>
-
               {/*
                 Note how each of the form elements has an id that matches the state.
                 This is not necessary but it is convenient.
                 Also note how each has an onChange event associated with our handleChange event.
               */}
+              <label>
+                Topic
+              </label>
               <input
                 value={this.state.term}
                 type="text"
@@ -53,12 +52,13 @@ var Form = React.createClass({
                 onChange={this.handleChange}
                 required
               />
+             
               <br />
               <button
                 className="btn btn-primary"
                 type="submit"
               >
-                Submit
+                Search
               </button>
             </div>
           </form>
