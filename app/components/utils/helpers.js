@@ -1,8 +1,7 @@
 // Include the axios package for performing HTTP requests (promise based alternative to request)
 var axios = require("axios");
 
-// Geocoder API
-var geocodeAPI = "4215c1187d5e4c2ebc0a50cc225dd3ae";
+// Global Variables to Store Results
 var searchTerm;
 var searchLink;
 

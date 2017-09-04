@@ -3,7 +3,6 @@ var React = require("react");
 
 // Here we include all of the sub-components
 var Form = require("./children/Form");
-var Results = require("./children/Results");
 var History = require("./children/History");
 
 // Helper for making AJAX requests to our API
@@ -73,17 +72,8 @@ var Main = React.createClass({
           </div>
 
           <div className="col-md-12">
-
             <Form setTerm={this.setTerm} />
-
           </div>
-
-          <div className="col-md-12">
-
-            <Results address={this.state.results} />
-
-          </div>
-
         </div>
 
         <div className="row">
