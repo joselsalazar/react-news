@@ -24,7 +24,7 @@ app.use(express.static("public"));
 // -------------------------------------------------
 
 // MongoDB Configuration configuration (Change this URL to your own DB)
-mongoose.connect("mongodb://localhost/nytArticles", {
+mongoose.connect("mongodb://heroku_c4717l5b:c0nrjrd1kjhnrc4qrmm7u1k963@ds123084.mlab.com:23084/heroku_c4717l5b", {
   useMongoClient: true
 });
 
