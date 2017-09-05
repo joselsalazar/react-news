@@ -12,7 +12,7 @@ var helper = {
   runQuery: function(topic) {
 
     // Figure out the geotopic
-    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=4215c1187d5e4c2ebc0a50cc225dd3ae&q=" + topic + "&begin_date=19960312&end_date=19980312";
+    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=4215c1187d5e4c2ebc0a50cc225dd3ae&q=" + topic;
 
     return axios.get(queryURL).then(function(response) {
       searchTerm = response.data.response.docs[0].snippet;
